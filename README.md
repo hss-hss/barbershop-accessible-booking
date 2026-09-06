@@ -49,8 +49,7 @@ Muitas pessoas autistas enfrentam dificuldades em ambientes tradicionais de barb
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/barbearia-tea.git
-   cd barbearia-tea
+   git clone https://github.com/hss-hss/barbershop-accessible-booking.git
    ```
 
 2. Instale as dependências:
