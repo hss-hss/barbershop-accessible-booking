@@ -9,7 +9,6 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  
 }
 
 
@@ -43,9 +42,11 @@ model Sessao {
   idUsuario        String
   nomeUsuarioFilho String
   dataSessao       DateTime
+  horarioSessao    String
   sessaoCombo      Boolean
   status           Boolean
   usuarioFilho     Usuario @relation(fields: [nomeUsuarioFilho, idUsuario], references: [nomeUsuarioFilho,id])
+  createdAt        DateTime @default(now())
 
   @@map("Sesssoes")
 }
